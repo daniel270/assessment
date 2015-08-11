@@ -1,0 +1,17 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE suite SYSTEM "http://testng.org/testng-1.0.dtd">
+<suite name="Failed suite [Front End automation Test]" parallel="none">
+  <parameter name="browser" value="FF"/>
+  <test name="automation Test(failed)" parallel="none">
+    <parameter name="browser" value="FF"/>
+    <classes>
+      <class name="com.automation.tests.FrontEndAutomation">
+        <methods>
+          <include name="closeBrowser"/>
+          <include name="getDriver"/>
+          <include name="search_and_sort_result_by_price"/>
+        </methods>
+      </class> <!-- com.automation.tests.FrontEndAutomation -->
+    </classes>
+  </test> <!-- automation Test(failed) -->
+</suite> <!-- Failed suite [Front End automation Test] -->

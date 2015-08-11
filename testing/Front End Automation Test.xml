@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<suite name="Front End automation Test" verbose="1" parallel="none">
+    <test name="automation Test" preserve-order="true">
+        <parameter name="browser" value="FF"></parameter>
+        <classes>
+            <class name="com.automation.tests.FrontEndAutomation"/>
+            <methods>
+                <exclude name="search_and_sort_result_by_name"/>
+                <include name="search_and_sort_result_by_price"/>
+            </methods>
+        </classes>
+    </test>
+</suite>

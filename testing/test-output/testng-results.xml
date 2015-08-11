@@ -1,0 +1,32 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<testng-results skipped="0" failed="0" total="1" passed="1">
+  <reporter-output>
+  </reporter-output>
+  <suite name="Front End automation Test" duration-ms="47805" started-at="2015-08-11T15:36:49Z" finished-at="2015-08-11T15:37:36Z">
+    <groups>
+    </groups>
+    <test name="automation Test" duration-ms="47805" started-at="2015-08-11T15:36:49Z" finished-at="2015-08-11T15:37:36Z">
+      <class name="com.automation.tests.FrontEndAutomation">
+        <test-method status="PASS" signature="getDriver(java.lang.String)[pri:0, instance:com.automation.tests.FrontEndAutomation@1ebec15]" name="getDriver" is-config="true" duration-ms="5224" started-at="2015-08-11T16:36:49Z" finished-at="2015-08-11T16:36:54Z">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[FF]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- getDriver -->
+        <test-method status="PASS" signature="search_and_sort_result_by_price()[pri:0, instance:com.automation.tests.FrontEndAutomation@1ebec15]" name="search_and_sort_result_by_price" duration-ms="41628" started-at="2015-08-11T16:36:54Z" description="User Searches for Available properties in ‘Dublin, Ireland’ by Price" finished-at="2015-08-11T16:37:35Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- search_and_sort_result_by_price -->
+        <test-method status="PASS" signature="closeBrowser()[pri:0, instance:com.automation.tests.FrontEndAutomation@1ebec15]" name="closeBrowser" is-config="true" duration-ms="933" started-at="2015-08-11T16:37:35Z" finished-at="2015-08-11T16:37:36Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- closeBrowser -->
+      </class> <!-- com.automation.tests.FrontEndAutomation -->
+    </test> <!-- automation Test -->
+  </suite> <!-- Front End automation Test -->
+</testng-results>

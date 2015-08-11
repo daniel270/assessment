@@ -1,0 +1,44 @@
+I have used selenium 2.0 WebDriver as it provides a friendly API that is easy to explore and understand, which I have use to automate the tests as it is easy to read and maintain. As because it is not tied to any particular test framework, 
+TestNG and Maven have been used as the automation framework for developing the tests because of the following reasons: 
+
+- TestNG as the test framework mainly because it is more advance in parameterize testing, dependency testing and suite testing than JUnit.
+- Maven because it can used to get all Selenium 2.0 java client library files and dependencies, using a maven pom.xml (project configuration) file. Maven automatically finds and downloads the dependencies to the project central repository while building the project.
+
+Configure your development environment using eclipe or your favourite IDE to run the automation scripts, 
+
+open Eclipse and do the following:
+
+- Expand menu 'Help | Install New Software... then point to Eclipse Indigo Site. If not available add the site "http://download.eclipse.org/releases/indigo". Expand 'General Purpose Tools' then select and install the following:
+'m2e - Maven Integration for Eclipse' 
+'m2e - slf4j over logback logging (Optional)', and 
+'Marketplace Client'
+Once the install process is complete it will ask you to restart Eclipse.
+
+- After Eclipse restarts, expand menu 'Help | Eclipse Marketplace...' then find and install TestNG. During installation, you may get a warning message, click OK. Once the install process is complete, restart Eclipse when prompted
+
+- Once the installation is complete, you can verify the plug-ins from the menu 'Window | Show view | Other...' TestNG view will be listed in the Java category and Maven will be listed in the Show view window. Full details can also be found in the following location:
+
+http://docs.seleniumhq.org/docs/03_webdriver.jsp
+http://testng.org/doc/Eclipse.html
+http://maven.apache.org/surefire/maven-surefire-plugin/examples/testng.html
+
+- As selenium has a different driver for different browsers, you must download the required drivers if testing on other browsers except Firefox. Firefox driver is built into the selenium core, but others need to be downloaded.
+
+The Setup
+The scripts have been written in java using the Page Objects design pattern to help reduce the pain of maintaining tests and how to make the code more modular. The Page Object Pattern puts an abstraction between the webpage or in our case topClass, and the test and allows tests to reuse elements and methods "offered" by a page method. This design pattern helps to reduce the amount of duplicated code in the test scripts. Hence, allowing changes in the presentation code to only require changes only to the Page Objects and not to the actual test code. 
+
+The Scripts Explained
+
+The test scripts can be imported and run in Eclipse or any IDE of choice. The first files in the Page Objects classes.
+
+The first package folder
+- Base Page / Browser Setup page: This is the default page that holds the page load actions that will be performed on the web pages. This is page also holds the setup Page Object class in which the function to select, launch and close browser have been written. The parameter name �Browser� will be defined in an XML file that will be used to run the test cases using TestNG framework.
+
+The second folder contains the test cases or actual test scripts.
+
+- Test cases folder: This is the all the automation test scripts
+- Test out-put folder: This is where the XML used to invoke the test scripts are located and also any successful or test failure run reports. 
+
+To run the test, right click on Front End Automation Test.xml file in the package explorer and select �Run As� or �Debug As� then select TestNG Suite.
+
+After each test run, TestNG generates a default �emailable-report.html�. To access the report for any tests, successful or not, expand the test-output folder in the package explorer window and then open the report in the browser winder.
