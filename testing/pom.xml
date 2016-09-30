@@ -32,7 +32,7 @@
                 <configuration>
                     <!--<argLine>-Xms3512m -Xmx3512m</argLine>-->
                     <suiteXmlFiles>
-                        <suiteXmlFile>Insight UI Regression Test.xml</suiteXmlFile>
+                        <suiteXmlFile>UI Regression Test.xml</suiteXmlFile>
                         <!--<suiteXmlFile>Unilever Database Tables Comparison Test.xml</suiteXmlFile>-->
                     </suiteXmlFiles>
                     <properties>
